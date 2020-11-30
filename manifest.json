@@ -1,0 +1,49 @@
+{
+    "name": "StealthEngine",
+    "version": "1.0",
+    "description": "A set of very stealthy, experiemental cheats for online exam/test/quiz platforms",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "Background.js"
+        ],
+        "persistent": false
+    },
+    "options_ui": {
+        "page": "Ui/Main.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+		"contentSettings",
+		"storage"
+	],
+    "content_scripts": [
+		{
+			"matches": [
+				"*://*.testportal.pl/*",
+				"*://*.testportal.net/*"
+			],
+			"css": [
+				
+			],
+			"js": [	
+                		"Utils/NoGeneralAnticheat.js",
+				"Utils/ForceCopyPasteCut.js"
+			],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [
+				"*://*.brainly.pl/*",
+				"*://*.brainly.com/*"
+			],
+			"css": [
+				
+			],
+			"js": [
+				"Utils/NoLocalStorage.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
