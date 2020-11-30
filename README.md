@@ -31,7 +31,7 @@ A result of "suboptimal" is assumed as partially working.
 | Microsoft Forms tests helper       |   Nonexistent    |    N/A     |  24-11-2020  |
 
 # Testportal notices
-[1] The result was taken as partially working due to the timer freeze actually being reliable on the last question.
+[1] The result was taken as partially working due to the timer freeze actually being reliable on the last question. However, it works just fine on timers set for each question (NOT when the timer is set for the whole test).
 
 # Quizizz notices
 [2] The bot doesn't work due to recent API changes.
