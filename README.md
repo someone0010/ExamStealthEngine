@@ -3,7 +3,7 @@ A Chrome extension to cheat on online tests, quizzes, exams etc.
 Those are very new versions, so issues may happen with their reliability.
 
 # Reliablility
-Those cheats are extremely reliable. Some websites update their APIs and protection measures very often and we take action almost daily to re-counter those.
+Some websites actually do update their APIs and protection measures very often and we take action almost daily to re-counter those. So you can expect those scripts to work 99% if not all the time.
 
 # Main features
 This extension can overall do:
