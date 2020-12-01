@@ -27,8 +27,8 @@
 				
 			],
 			"js": [	
-                		"Utils/NoGeneralAnticheat.js",
-				"Utils/ForceCopyPasteCut.js"
+                		"Modules/NoBlurSpy.js",
+				"Modules/ForceCopyPasteCut.js"
 			],
 			"run_at": "document_start"
 		},
@@ -41,7 +41,7 @@
 				
 			],
 			"js": [
-				"Utils/NoLocalStorage.js"
+				"Modules/NoLocalStorage.js"
 			],
 			"run_at": "document_start"
 		}
