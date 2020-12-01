@@ -2,6 +2,16 @@
 A Chrome extension to cheat on online tests, quizzes, exams etc.
 Those are very new versions, so issues may happen with their reliability.
 
+# Installation
+1. Download this repository source.
+2. Unzip the downloaded repository.
+3. Click the three dots (or a settings icon) in the top right corner, click "More tools" and click Extensions. In case of other browsers it might be different.
+4. Turn on Developer mode (top right corner in the extensions tab).
+5. Three buttons should appear - click "Load unpacked".
+6. Choose the extracted repository (warning: there is usually another same folder in the extracted repository, you'll have to select that).
+7. An extension should pop up on the list.
+8. Go on any page, click **`F12`** or **`Ctrl+Shift+I`**, go in the Console tab and write `document.hasFocus()`. If it says `false`, you must have done something wrong or a script broke recently (please report that through Issues). Otherwise, if it says `true`, then you're set!
+
 # Reliablility
 Some websites actually do update their APIs and protection measures very often and we take action almost daily to re-counter those. So you can expect those scripts to work 99% if not all the time.
 
