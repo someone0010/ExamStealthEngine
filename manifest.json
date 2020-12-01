@@ -1,34 +1,41 @@
 {
-    "name": "StealthEngine",
-    "version": "1.0",
-    "description": "A set of very stealthy, experiemental cheats for online exam/test/quiz platforms",
-    "manifest_version": 2,
-    "background": {
-        "scripts": [
-            "Background.js"
-        ],
-        "persistent": false
-    },
-    "options_ui": {
-        "page": "Ui/Main.html",
-        "open_in_tab": true
-    },
-    "permissions": [
+	"name": "StealthEngine",
+	"version": "1.0",
+	"description": "A set of very stealthy, experiemental cheats for online exam/test/quiz platforms",
+	"manifest_version": 2,
+	"background": {
+		"scripts": [
+			"Background.js"
+		],
+		"persistent": false
+	},
+	"permissions": [
 		"contentSettings",
 		"storage"
 	],
-    "content_scripts": [
+	"content_scripts": [{
+			"matches": [
+				"*://*/*"
+			],
+			"css": [
+
+			],
+			"js": [
+				"Modules/NoBlur.js",
+				"Modules/ForceCopyPasteCut.js"
+			],
+			"run_at": "document_start"
+		},
 		{
 			"matches": [
 				"*://*.testportal.pl/*",
 				"*://*.testportal.net/*"
 			],
 			"css": [
-				
+
 			],
-			"js": [	
-                		"Modules/NoBlurSpy.js",
-				"Modules/ForceCopyPasteCut.js"
+			"js": [
+				"Modules/NoIntervals.js"
 			],
 			"run_at": "document_start"
 		},
@@ -38,7 +45,7 @@
 				"*://*.brainly.com/*"
 			],
 			"css": [
-				
+
 			],
 			"js": [
 				"Modules/NoLocalStorage.js"

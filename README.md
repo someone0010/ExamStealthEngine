@@ -41,3 +41,6 @@ All source files are kept private and are distributed only in a heavy-obfuscated
 
 # Suggestions and ideas
 If you have any suggestions or an idea, please create a pull request for that or forward it by creating an issue!
+
+# Warning
+This extension **WILL** change your browser's behavior. Some websites will not work correctly when this extension is enabled. So, consider disabling this extension when you browse the web normally, and only use it when you have been given access to a test, quiz or an exam.
