@@ -1,57 +1,45 @@
 {
-	"name": "StealthEngine",
-	"version": "1.0",
-	"description": "A set of very stealthy, experiemental cheats for online exam/test/quiz platforms",
-	"manifest_version": 2,
-	"background": {
-		"scripts": [
-			"Background.js"
-		],
-		"persistent": false
-	},
-	"permissions": [
-		"contentSettings",
-		"storage"
-	],
-	"content_scripts": [{
-			"matches": [
-				"*://*.testportal.pl/*",
-				"*://*.testportal.net/*"
-			],
-			"css": [
+    "name": "ExamStealthEngine",
+    "version": "1.1",
+    "description": "An experiemental cheat for online exam/test/quiz platforms",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "Background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "contentSettings",
+        "storage"
+    ],
+    "content_scripts": [{
+            "matches": [
+                "*://*.testportal.pl/*",
+                "*://*.testportal.net/*"
+            ],
+            "css": [
 
-			],
-			"js": [
-				"Modules/NoBlur.js",
-				"Modules/ForceCopyPasteCut.js"
-			],
-			"run_at": "document_start"
-		},
-		{
-			"matches": [
-				"*://*.testportal.pl/*",
-				"*://*.testportal.net/*"
-			],
-			"css": [
+            ],
+            "js": [
+                "Modules/NoBlur.js",
+                "Modules/ForceCopyPasteCut.js",
+                "Modules/NoIntervals.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://*.brainly.pl/*",
+                "*://*.brainly.com/*"
+            ],
+            "css": [
 
-			],
-			"js": [
-				"Modules/NoIntervals.js"
-			],
-			"run_at": "document_start"
-		},
-		{
-			"matches": [
-				"*://*.brainly.pl/*",
-				"*://*.brainly.com/*"
-			],
-			"css": [
-
-			],
-			"js": [
-				"Modules/NoLocalStorage.js"
-			],
-			"run_at": "document_start"
-		}
-	]
+            ],
+            "js": [
+                "Modules/NoLocalStorage.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
 }
